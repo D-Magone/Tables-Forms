@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magone</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  </style>
+</head>
+<body>
+  <h1 style="font-size: 60px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; color: rgb(56, 189, 212);">Join a mission in Antarctica!</h1>
+  <h2>Available posistions</h2>
+  <table table class="table1">
+    <thead>
+      <th rowspan="1" colspan="1">Postion</th>
+      <th rowspan="1" colspan="1">Requirements</th>
+      <th rowspan="1" colspan="2">Start/End Date</th>
+      <th rowspan="1" colspan="2">Salary</th>
+    </thead>
+    <tr>
+      <td>Helicopter pilot</td>
+      <td>
+        <ul>
+          <li>Must receive flight training at an FAA-approved flight school.</li>
+          <li>Must complete 150 hours of flight time</li>
+        </ul></td>
+      <td>27/10/2020</td>
+      <td>31/05/2021</td>
+      <td>$80,500</td>
+    </tr>
+    <tr>
+      <td>Mechanic</td>
+      <td>
+        <ul>
+          <li>Certification from a vocational school or trade school is preferred.</li>
+          <li>A minimum of 2 years’ experience in a similar role.</li>
+        </ul></td>
+      <td>27/10/2020</td>
+      <td>20/05/2021</td>
+      <td>$75,000</td>
+    </tr>
+    <tr>
+      <td>Palaeontologist</td>
+      <td>
+        <ul>
+          <li>Ph.D. in palaeontology.</li>
+          <li>Studying field in frozen remains of prehistoric finds.</li>
+        </ul></td>
+      <td>27/10/2020</td>
+      <td>25/05/2021</td>
+      <td>$78,500</td>
+    </tr>
+    <tr>
+      <td>Cook</td>
+      <td>
+        <ul>
+          <li>Culinary school 2-4 year degree or foreign equivalency preferred.</li>
+          <li>Good working knowledge of accepted sanitation standards and health codes.</li>
+        </ul>
+      </td>
+      <td>27/10/2020</td>
+      <td>16/05/2021</td>
+      <td>$66,000</td>
+    </tr>
+  </table><br><br>
+  <div class="container">
+    <form action="html.html" method="get">
+      <h2 style="color: rgb(56, 189, 212);">Fill out the form bellow to apply</h2>
+      <input class="input1" name="Name" id="Name" placeholder=" Your name here..."><br><br>
+      <input class="input1" name="Surname" id="Surname" placeholder=" Your surname here..."><br><br>
+      <b>Choose your gender:</b><br><br>
+      <label for="Man">Man:</label>
+      <input type="radio" name="gender" id="man" value="man">
+      <label for="Woman">Woman:</label>
+      <input type="radio" name="gender" id="woman" value="woman">
+      <label for="Other">Alien:</label>
+      <input type="radio" name="gender" id="alien" value="alien">
+      <label for="Other">Other:</label>
+      <input type="radio" name="gender" id="other" value="other"><br><br>
+      <b>Which postion are you applying for?</b>
+      <select name="select" id="select">
+        <option value="" selected disabled hidden>Select postion</option>
+        <option value="1">Helicopter pilot</option>
+        <option value="1">Mechanic</option>
+        <option value="1">Palaeontologist</option>
+        <option value="1">Cook</option>
+      </select><br><br>
+      <b>Additional questions</b>
+      <table table class="table2">
+      <thead>
+        <th></th>
+        <th id="blank" headers="blank"></th>
+      </thead>
+      <tr>
+        <td><label for="text">Do you get cold quickly?</label></td>
+        <td><input type="checkbox" name="checkbox" id="Cold"><br></td>
+      </tr>
+      <tr>
+        <td><label for="text">Do you remain cool under extreme pressure?</label></td>
+        <td><input type="checkbox" name="checkbox" id="Pressure"><br></td>
+      </tr>
+      <tr>
+        <td><label for="text">Are you a peoples person?</label></td>
+        <td><input type="checkbox" name="checkbox" id="Person"><br></td>
+      </tr>
+      <tr>
+        <td><label for="text">Are you afraid of extraterrestrial?</label></td>
+        <td><input type="checkbox" name="checkbox" id="Alien"></td>
+      </tr></table><br><br>
+      <textarea name="textarea" cols="65" rows="10" maxlength="300" placeholder="Why do you want to go to Antarctica? (max 300 characters)"></textarea><br><br>
+      <input type="submit" value="Submit" onclick="submit()">
+    </form>
+  </div>
+</body>
+</html>
